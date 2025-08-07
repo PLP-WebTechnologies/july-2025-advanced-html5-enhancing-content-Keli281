@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 2em;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            padding-top: 2em;
+            border-top: 1px solid #ddd;
+            margin-top: 3em;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 3em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        audio, video {
+            display: block;
+            margin-top: 1em;
+            max-width: 100%;
+        }
+        form {
+            background: #f9f9f9;
+            padding: 2em;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 2em;
+            padding: 1em;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 0.5em;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>My Enhanced Web Page</h1>
+
+        <section id="content-section">
+            <h2>Content Showcase</h2>
+
+            <h3>A List of My Favorite Things</h3>
+            <ul>
+                <li>Learning coding</li>
+                <li>attending hackathons</li>
+                <li>Listening to music while coding</li>
+                <li>Travelling</li>
+            </ul>
+
+            <h3>Ranked List of Programming Languages</h3>
+            <ol>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ol>
+
+            <h3>Project Progress Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Status</th>
+                        <th>Due Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Homepage Redesign</td>
+                        <td>In Progress</td>
+                        <td>2025-08-15</td>
+                    </tr>
+                    <tr>
+                        <td>Form Validation</td>
+                        <td>Completed</td>
+                        <td>2025-08-10</td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio Update</td>
+                        <td>Planning</td>
+                        <td>2025-10-02</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+        <section id="media-section">
+            <h2>Media Gallery</h2>
+
+            <h3>Image Content</h3>
+            <p>This is an image of my favourite artist.</p>
+            <img src="media/lil_tjay.png" alt="This is a picture of US rapper Lil Tjay" width="300">
+
+            <h3>Audio Content</h3>
+            <p>Listen to some music from my favourite artist.</p>
+            <audio controls>
+                <source src="media/bsf4l.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Content</h3>
+            <p>Watch a short funny edit that cracks me up everytime.</p>
+            <video width="300" controls>
+                <source src="media/meme.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </audio>
+        </section>
+
+        <hr>
+        <section id="form-section">
+            <h2>User Registration Form</h2>
+            <p>Please fill the form below to register.</p>
+
+            <form action="location" method="how" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Bruce Fly" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="brucefly@pix.com" autocomplete="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" title="Format: 123-456-7890" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" minlength="5" maxlength="15" placeholder="Choose a username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+
+                    <label for="favorite_color">Favorite Color:</label>
+                    <input type="color" id="favorite_color" name="favorite_color">
+
+                    <label for="age">Age (18-70):</label>
+                    <input type="number" id="age" name="age" min="18" max="70" required>
+
+                    <label for="homepage">Homepage URL:</label>
+                    <input type="url" id="homepage" name="homepage" placeholder="https://example.com">
+                </fieldset>
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Natalie Keli. All rights reserved.
+    </footer>
+
+</body>
+</html>
